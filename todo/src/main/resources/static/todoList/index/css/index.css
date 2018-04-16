@@ -1,0 +1,64 @@
+el-header{
+    color: #333;
+    border-bottom: 1px solid #dadada;
+}
+#logo{
+    margin-left:140px;
+    margin-top:10px;
+}
+.containerBottom{
+    padding-top:15px;
+    background-color:#E9EEF3;
+    height:auto;
+    font-size:14px;
+}
+/*身体*/
+.el-card{
+    float:left;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:10px;
+}
+.text {
+    font-size: 14px;
+}
+
+.item {
+    margin-bottom: 18px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after {
+    clear: both
+}
+
+.box-card {
+    margin-left:160px;
+    width: 1040px;
+}
+.el-tag{
+    width:100%;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+#add{
+    margin-left: 460px;
+    cursor:pointer;
+}
+.finished{
+    text-decoration:line-through;
+}
+
+
+.finishedBox{
+    select:true;
+}
+
+/*选择框*/
+#checkbox1 .el-checkbox__inner{
+    border:1px solid #f56c6c;
+}

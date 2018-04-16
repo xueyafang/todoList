@@ -1,0 +1,13 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.142.51.204:3306/xyfTodo?characterEncoding=utf8
+    username: dns
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql

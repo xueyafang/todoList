@@ -1,0 +1,33 @@
+<el-dialog title="新增待办事项" :visible.sync="dialogSaveVisible">
+    <el-form :model="saveForm">
+        <el-form-item label="事项内容" :label-width="formLabelWidth">
+            <el-input
+                    v-model="saveForm.item"
+                    type="textarea"
+                    clearable
+                    auto-complete="off"></el-input>
+        </el-form-item>
+        <el-form-item label="优先级" :label-width="formLabelWidth">
+            <el-select v-model="saveForm.priority" placeholder="请选择优先级" size="17">
+                <el-option
+                        v-for="item in priorityList"
+                        :key="item.value"
+                        :label="item.label"
+                        :value="item.value">
+                </el-option>
+            </el-select>
+        </el-form-item>
+        <el-form-item label="截止日期" :label-width="formLabelWidth">
+            <el-date-picker
+                    v-model="saveForm.cutoff"
+                    type="datetime"
+                    format="yyyy-MM-dd HH:mm:ss"
+                    placeholder="选择日期时间">
+            </el-date-picker>
+        </el-form-item>
+    </el-form>
+    <div slot="footer" class="dialog-footer">
+        <el-button @click="resetSaveForm">重置</el-button>
+        <el-button type="primary" @click="addForm">确 定</el-button>
+    </div>
+</el-dialog>

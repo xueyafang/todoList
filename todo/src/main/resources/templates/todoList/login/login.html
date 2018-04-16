@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式 -->
+    <!-- 引入样式 -->
+	<!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+	<link rel="stylesheet" href="/frame/elementui/elementui.css" />
+    <!-- 引入组件库 -->
+    <link rel="stylesheet" href="/todoList/login/css/login.css" />
+</head>
+<body>
+    <div id="app" v-cloak>
+	    <el-container>
+		  <el-header>
+		  	<div>
+		  		<img id="logo" src="/todoList/login/image/logo.png">
+		  	</div>
+		  </el-header>
+		  <el-container class="containerBottom">
+		    <el-aside style="width:600px;"></el-aside>
+		    <el-main style="width:440px">
+		    	<!--表单-->
+		    	<el-form :model="loginForm" label-width="100px">
+		    	  <el-form-item label="用户名">
+				    <el-input v-model="loginForm.name" size="small" style="width:200px"></el-input>
+				  </el-form-item>
+				  <el-form-item label="密码">
+				    <el-input type="password" v-model="loginForm.password" size="small" style="width:200px" auto-complete="off"></el-input>
+				  </el-form-item> 
+				  <el-form-item>
+				    <el-button type="primary" size="small" id="loginButton" @click="submitForm()">登录</el-button>
+				  </el-form-item>
+					<el-form-item>
+						<a href="/regist">没有账号,去注册</a>
+					</el-form-item>
+				</el-form>
+		    </el-main>
+		  </el-container>
+		</el-container>
+    </div>
+</body>
+<!--引入jquery-->
+<script type="text/javascript" src="/frame/jquery/jquery-2.1.4.min.js"></script>
+<!--引入vue.js-->
+<script  type="text/javascript" src="/frame/vue/vue.min.js"></script>
+ <!--引入组件库-->
+<script type="text/javascript" src="/frame/elementui/elementui.js"></script>
+<script type="text/javascript" src="/todoList/login/js/login.js"></script>
+</html>

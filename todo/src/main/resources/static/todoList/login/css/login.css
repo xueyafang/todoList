@@ -1,0 +1,47 @@
+.el-header{
+    color: #333;
+    border-bottom: 1px solid #dadada;
+  }
+.containerBottom{
+	padding-top:80px;
+	background-color:#E9EEF3;
+	height:550px;
+
+}
+  .el-aside {
+    background:url(../image/timg.jpg) no-repeat;
+    color: #333;
+    width:600px;
+    height:400px;
+    margin-left:160px;
+    background-size:100%;
+  }
+  
+  .el-main {
+  	padding-top:120px;
+  	background:whitesmoke;
+    margin-right:160px;
+    color: #333;
+   	height:400px;
+   	width:440px;
+  }
+  
+
+/*logo*/
+#logo{
+	margin-left:140px;
+	margin-top:10px;
+}
+#loginButton {
+    width: 200px;
+}
+
+.containerBottom a{
+    color:#409eff;
+    margin-left:100px;
+    text-decoration:none;
+}
+
+.containerBottom a:hover{
+    text-decoration:underline;
+}

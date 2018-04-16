@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式 -->
+    <!-- 引入样式 -->
+	<link rel="stylesheet" href="/frame/elementui/elementui.css" />
+    <!-- 引入组件库 -->
+    <link rel="stylesheet" href="/todoList/regist/css/regist.css" />
+
+    
+</head>
+<body>
+    <div id="app" v-cloak>
+	    <el-container>
+		  <el-header>
+		  	<div>
+		  		<img id="logo" src="/todoList/regist/image/logo.png">
+		  	</div>
+		  </el-header>
+		  <el-container class="containerBottom" v-cloak>
+		    <el-aside style="width:600px;"></el-aside>
+		    <el-main style="width:440px">
+		    	<!--表单-->
+		    	<el-form :model="registForm" label-width="100px">
+		    	  <el-form-item label="用户名" prop="name">
+				    <el-input v-model.number="registForm.name" size="small" style="width:200px"></el-input>
+				  </el-form-item>
+				  <el-form-item label="密码" prop="password">
+				    <el-input type="password" v-model="registForm.password" size="small" style="width:200px" auto-complete="off"></el-input>
+				  </el-form-item>
+				  <el-form-item label="确认密码" prop="checkPass">
+				    <el-input type="password" v-model="registForm.checkPass" size="small" style="width:200px" auto-complete="off"></el-input>
+				  </el-form-item>
+				  <el-form-item>
+				    <el-button type="primary" size="small" id="registButton" @click="submitForm()" v-cloak>注册</el-button>
+				  </el-form-item>
+					<el-form-item>
+						<a href="/">已有账号,去登录</a>
+					</el-form-item>
+				</el-form>
+		    </el-main>
+		  </el-container>
+		</el-container>
+    </div>
+	<!--引入jquery-->
+
+	<script type="text/javascript" src="/frame/jquery/jquery-2.1.4.min.js"></script>
+	<!--引入vue.js-->
+	<script  type="text/javascript" src="/frame/vue/vue.min.js"></script>
+	<!-- 引入组件库 -->
+	<script type="text/javascript" src="/frame/elementui/elementui.js"></script>
+
+	<script type="text/javascript" src="/todoList/regist/js/regist.js"></script>
+</body>
+</html>
